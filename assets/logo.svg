@@ -1,11 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 128 128" role="img" aria-label="�\� �t� \�">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="한국상품권협회">
   <defs>
-    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="kgaG" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#7c5cff"/>
       <stop offset="1" stop-color="#30d5ff"/>
     </linearGradient>
   </defs>
-  <rect x="10" y="10" width="108" height="108" rx="26" fill="#0b1220"/>
-  <path d="M35 80c10-26 31-44 58-44" fill="none" stroke="url(#lg)" stroke-width="14" stroke-linecap="round"/>
-  <circle cx="88" cy="42" r="7" fill="#30d5ff"/>
+  <rect x="1" y="1" width="38" height="38" rx="9" fill="#0b1220"/>
+  <path d="M11 9v22" stroke="url(#kgaG)" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M11 20l9-9" stroke="url(#kgaG)" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M11 20l11 11" stroke="url(#kgaG)" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M24 11l4 12 4-12" fill="none" stroke="url(#kgaG)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

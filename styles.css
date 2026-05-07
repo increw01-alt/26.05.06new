@@ -91,16 +91,45 @@ a{color:inherit}
 .brand{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:12px;
   text-decoration:none;
   font-weight:700;
   letter-spacing:-.02em;
+  color:inherit;
 }
 .brand__logo{
   border-radius:10px;
   box-shadow: 0 8px 24px rgba(124,92,255,.25);
+  flex:none;
 }
 .brand__text{white-space:nowrap}
+.brand__lockup{
+  display:flex;
+  flex-direction:column;
+  line-height:1.05;
+  white-space:nowrap;
+}
+.brand__name{
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+.brand__sub{
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.14em;
+  color:var(--muted);
+  margin-top:2px;
+}
+html[data-theme="dark"] .topbar--over-hero .brand__sub,
+html:not([data-theme="dark"]) .topbar--over-hero .brand__sub{
+  color:inherit;
+  opacity:.75;
+}
+@media (max-width: 640px){
+  .brand__sub{display:none}
+  .brand__name{font-size:16px}
+}
 
 /* Light theme: dark text on translucent white */
 html:not([data-theme="dark"]) .topbar--over-hero .brand,
