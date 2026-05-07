@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="상품권 구입/판매(매입) 상담 자주 묻는 질문(FAQ). 상담 채널/대상/절차에 대한 빠른 안내."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="canonical" href="https://example.com/faq.html" />
+    <title>자주 묻는 질문 | 한국상품권협회</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "어떤 상품권을 상담할 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "모바일 상품권, 문화상품권, 백화점 상품권, 구글 기프트카드 등 상품권 전반에 대한 구입/판매(매입) 상담이 가능합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "대량 구매/할부 구매도 상담이 되나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네. 상품권 종류와 조건에 따라 가능 여부가 달라질 수 있어 상담으로 확인 후 안내해드립니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "상담은 어떤 채널로 진행되나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "카카오톡/전화/이메일 등 편한 채널로 1:1 상담을 진행합니다."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">본문 바로가기</a>
+
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="./index.html" aria-label="한국상품권협회 홈으로">
+          <img class="brand__logo" src="./assets/logo.svg" alt="" width="40" height="40" />
+          <span class="brand__lockup">
+            <span class="brand__name">한국상품권협회</span>
+            <span class="brand__sub">KOREA GIFT CARD ASSOCIATION</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="주요 메뉴">
+          <a class="nav__link" href="./buy.html">구매 상담</a>
+          <a class="nav__link" href="./sell.html">매입 상담</a>
+          <a class="nav__link" href="./services.html">상담 서비스</a>
+          <a class="nav__link" href="./shopping.html">쇼핑몰</a>
+          <a class="nav__link" href="./process.html">진행 절차</a>
+          <a class="nav__link" href="./faq.html" aria-current="page">자주 묻는 질문</a>
+          <a class="nav__link" href="./contact.html">상담 문의</a>
+        </nav>
+        <div class="topbar__actions">
+          <button class="btn btn--ghost" type="button" id="themeToggle" aria-label="테마 전환">
+            <span class="btn__icon" aria-hidden="true">◐</span>
+            <span class="btn__text">테마</span>
+          </button>
+          <a class="btn btn--primary" href="./contact.html">빠른 상담</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <div class="section__head">
+            <h1 class="section__title">자주 묻는 질문</h1>
+            <p class="section__desc">상담 전 궁금한 내용을 빠르게 확인하세요.</p>
+          </div>
+
+          <div class="faq" role="list">
+            <details class="faq__item" role="listitem">
+              <summary class="faq__q">어떤 상품권을 상담할 수 있나요?</summary>
+              <div class="faq__a">
+                모바일 상품권, 문화상품권, 백화점 상품권, 구글 기프트카드 등 상품권 전반에 대한 구입/판매(매입) 상담이
+                가능합니다.
+              </div>
+            </details>
+            <details class="faq__item" role="listitem">
+              <summary class="faq__q">대량 구매/할부 구매도 상담이 되나요?</summary>
+              <div class="faq__a">
+                네. 상품권 종류와 조건에 따라 가능 여부가 달라질 수 있어 상담으로 확인 후 안내해드립니다.
+              </div>
+            </details>
+            <details class="faq__item" role="listitem">
+              <summary class="faq__q">상담은 어떤 채널로 진행되나요?</summary>
+              <div class="faq__a">카카오톡/전화/이메일 등 편한 채널로 1:1 상담을 진행합니다.</div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">© <span id="year"></span> 한국상품권협회 (KOREA GIFT CARD ASSOCIATION). All rights reserved.</p>
+        <p class="footer__sub"><a href="./services.html">상담 서비스</a> · <a href="./contact.html">상담 문의</a></p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="한국상품권협회 상담 문의 페이지. 전화/이메일/채널톡으로 1:1 상품권 구입·판매(매입) 상담을 시작하세요."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="canonical" href="https://example.com/contact.html" />
+    <title>상담 문의 | 한국상품권협회</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">본문 바로가기</a>
+
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="./index.html" aria-label="한국상품권협회 홈으로">
+          <img class="brand__logo" src="./assets/logo.svg" alt="" width="40" height="40" />
+          <span class="brand__lockup">
+            <span class="brand__name">한국상품권협회</span>
+            <span class="brand__sub">KOREA GIFT CARD ASSOCIATION</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="주요 메뉴">
+          <a class="nav__link" href="./buy.html">구매 상담</a>
+          <a class="nav__link" href="./sell.html">매입 상담</a>
+          <a class="nav__link" href="./services.html">상담 서비스</a>
+          <a class="nav__link" href="./shopping.html">쇼핑몰</a>
+          <a class="nav__link" href="./process.html">진행 절차</a>
+          <a class="nav__link" href="./faq.html">자주 묻는 질문</a>
+          <a class="nav__link" href="./contact.html" aria-current="page">상담 문의</a>
+        </nav>
+        <div class="topbar__actions">
+          <button class="btn btn--ghost" type="button" id="themeToggle" aria-label="테마 전환">
+            <span class="btn__icon" aria-hidden="true">◐</span>
+            <span class="btn__text">테마</span>
+          </button>
+          <a class="btn btn--primary" href="tel:+8218002434">전화 상담</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <div class="section__head">
+            <h1 class="section__title">상담 문의</h1>
+            <p class="section__desc">지금 바로 1:1 상담을 시작하세요. 전화/이메일/채널톡 등 편한 채널을 선택하시면 됩니다.</p>
+          </div>
+
+          <div class="cta">
+            <div class="cta__copy">
+              <h2 class="cta__title">지금 바로 1:1 상담을 시작하세요</h2>
+              <p class="cta__desc">
+                아래 버튼은 임시 연결입니다. 실제 운영 정보(전화/카카오톡/채널톡/사업자 정보)로 교체하면 그대로 사용 가능합니다.
+              </p>
+            </div>
+            <div class="cta__actions">
+              <a class="btn btn--primary" href="tel:+821000000000">전화 상담</a>
+              <a class="btn btn--secondary" href="mailto:hello@example.com?subject=%EC%83%81%ED%92%88%EA%B6%8C%20%EC%83%81%EB%8B%B4%20%EB%AC%B8%EC%9D%98">
+                이메일 상담
+              </a>
+              <a class="btn btn--ghost btn--chat" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener noreferrer">
+                채널톡 상담
+              </a>
+            </div>
+          </div>
+
+          <div class="showcase" style="margin-top:18px">
+            <div class="showcase__panel">
+              <h2 class="showcase__title">구매 상담을 원하시면</h2>
+              <p class="showcase__desc">상품권 종류/수량/방식을 확인하고, 가능한 옵션을 안내합니다.</p>
+              <a class="btn btn--primary" href="./buy.html">구매 상담 페이지</a>
+            </div>
+            <div class="showcase__panel">
+              <h2 class="showcase__title">매입(판매) 상담을 원하시면</h2>
+              <p class="showcase__desc">상품권 상태/종류 확인 후 진위·정산 절차를 안내합니다.</p>
+              <a class="btn btn--primary" href="./sell.html">매입 상담 페이지</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">© <span id="year"></span> 한국상품권협회 (KOREA GIFT CARD ASSOCIATION). All rights reserved.</p>
+        <p class="footer__sub"><a href="./faq.html">FAQ</a> · <a href="./process.html">진행 절차</a></p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

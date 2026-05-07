@@ -485,6 +485,17 @@ html[data-theme="dark"] .topbar--over-hero .nav__link:hover{
   border:1px solid var(--border);
   background: color-mix(in srgb, var(--card) 80%, transparent);
 }
+a.feature{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+a.feature:hover{
+  border-color: rgba(9,124,255,.45);
+  box-shadow: 0 18px 40px rgba(9,124,255,.10);
+  transform: translateY(-2px);
+}
 .feature__icon{
   width:40px;
   height:40px;

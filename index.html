@@ -59,36 +59,6 @@
                 "telephone": "+82-10-0000-0000"
               }
             ]
-          },
-          {
-            "@type": "FAQPage",
-            "@id": "https://example.com/#faq",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "어떤 상품권을 구입/판매(매입) 상담할 수 있나요?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "모바일 상품권, 문화상품권, 백화점 상품권, 구글 기프트카드 등 상품권 전반에 대해 구입/판매(매입) 상담을 도와드립니다."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "상담은 어떻게 진행되나요?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "카카오톡/전화/이메일 등 원하는 채널로 1:1로 진행되며, 필요한 정보 확인 후 절차와 유의사항을 안내해드립니다."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "대량 구매 또는 할부 구매도 가능한가요?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "대량 구매/할부 구매는 상품권 종류 및 조건에 따라 가능 여부가 달라질 수 있어, 상담으로 확인해드립니다."
-                }
-              }
-            ]
           }
         ]
       }
@@ -97,9 +67,9 @@
   <body>
     <a class="skip" href="#main">본문 바로가기</a>
 
-    <header class="topbar" id="top">
+    <header class="topbar topbar--over-hero" id="top">
       <div class="container topbar__inner">
-        <a class="brand" href="#top" aria-label="한국상품권협회 홈으로">
+        <a class="brand" href="./index.html" aria-label="한국상품권협회 홈으로">
           <img class="brand__logo" src="./assets/logo.svg" alt="" width="40" height="40" />
           <span class="brand__lockup">
             <span class="brand__name">한국상품권협회</span>
@@ -110,11 +80,11 @@
         <nav class="nav" aria-label="주요 메뉴">
           <a class="nav__link" href="./buy.html">구매 상담</a>
           <a class="nav__link" href="./sell.html">매입 상담</a>
-          <a class="nav__link" href="#services">상담 서비스</a>
-          <a class="nav__link" href="#shopping">쇼핑몰</a>
-          <a class="nav__link" href="#process">진행 절차</a>
-          <a class="nav__link" href="#faq">자주 묻는 질문</a>
-          <a class="nav__link" href="#contact">상담 문의</a>
+          <a class="nav__link" href="./services.html">상담 서비스</a>
+          <a class="nav__link" href="./shopping.html">쇼핑몰</a>
+          <a class="nav__link" href="./process.html">진행 절차</a>
+          <a class="nav__link" href="./faq.html">자주 묻는 질문</a>
+          <a class="nav__link" href="./contact.html">상담 문의</a>
         </nav>
 
         <div class="topbar__actions">
@@ -138,7 +108,7 @@
             </span>
             <span class="btn__text">채널톡 상담</span>
           </a>
-          <a class="btn btn--primary" href="#contact">빠른 상담</a>
+          <a class="btn btn--primary" href="./contact.html">빠른 상담</a>
         </div>
       </div>
     </header>
@@ -156,8 +126,8 @@
             </p>
 
             <div class="hero__cta">
-              <a class="btn btn--primary" href="#contact">카카오톡/전화 상담하기</a>
-              <a class="btn btn--secondary" href="#services">서비스 보기</a>
+              <a class="btn btn--primary" href="./contact.html">카카오톡/전화 상담하기</a>
+              <a class="btn btn--secondary" href="./services.html">서비스 보기</a>
             </div>
 
             <div class="hero__meta" aria-label="연락처">
@@ -277,206 +247,52 @@
           </div>
         </div>
 
-        <div class="hero__device" aria-hidden="true">
-          <svg class="device" viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="dg" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="var(--primary)" />
-                <stop offset="1" stop-color="var(--primary2)" />
-              </linearGradient>
-              <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
-                <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".35" />
-              </filter>
-            </defs>
-
-            <g filter="url(#ds)" opacity=".95">
-              <rect x="26" y="40" width="210" height="128" rx="18" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.14)" />
-              <rect x="44" y="62" width="174" height="16" rx="8" fill="url(#dg)" opacity=".9" />
-              <rect x="44" y="92" width="96" height="10" rx="5" fill="rgba(255,255,255,.22)" />
-              <rect x="44" y="110" width="132" height="10" rx="5" fill="rgba(255,255,255,.18)" />
-              <rect x="44" y="132" width="64" height="10" rx="5" fill="rgba(255,255,255,.16)" />
-              <circle cx="196" cy="136" r="10" fill="rgba(255,255,255,.12)" />
-              <circle cx="220" cy="136" r="10" fill="rgba(255,255,255,.08)" />
-            </g>
-
-            <g filter="url(#ds)" opacity=".95">
-              <rect x="256" y="18" width="118" height="220" rx="26" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.14)" />
-              <rect x="274" y="48" width="82" height="12" rx="6" fill="rgba(255,255,255,.20)" />
-              <rect x="274" y="72" width="54" height="10" rx="5" fill="rgba(255,255,255,.16)" />
-              <rect x="274" y="98" width="82" height="56" rx="14" fill="rgba(124,92,255,.16)" stroke="rgba(124,92,255,.28)" />
-              <rect x="274" y="168" width="82" height="44" rx="14" fill="rgba(48,213,255,.10)" stroke="rgba(48,213,255,.22)" />
-              <rect x="298" y="220" width="34" height="8" rx="4" fill="rgba(255,255,255,.18)" />
-            </g>
-
-            <g filter="url(#ds)" opacity=".95">
-              <rect x="392" y="74" width="102" height="152" rx="18" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.14)" />
-              <rect x="408" y="92" width="70" height="10" rx="5" fill="rgba(255,255,255,.20)" />
-              <rect x="408" y="112" width="54" height="10" rx="5" fill="rgba(255,255,255,.16)" />
-              <rect x="408" y="140" width="70" height="56" rx="14" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)" />
-              <path
-                d="M420 168c10-22 28-36 50-36"
-                fill="none"
-                stroke="url(#dg)"
-                stroke-width="10"
-                stroke-linecap="round"
-                opacity=".9"
-              />
-            </g>
-
-            <path
-              d="M40 240c60-56 136-72 210-34 72 36 132 36 220-12"
-              fill="none"
-              stroke="rgba(255,255,255,.10)"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M44 244c58-52 132-66 202-30 70 36 134 34 222-14"
-              fill="none"
-              stroke="rgba(124,92,255,.20)"
-              stroke-width="2"
-              stroke-linecap="round"
-              opacity=".8"
-            />
-          </svg>
-        </div>
-
         <div class="hero__glow" aria-hidden="true"></div>
       </section>
 
-      <section class="section" id="services">
+      <section class="section">
         <div class="container">
           <div class="section__head">
-            <h2 class="section__title">상품권 관련 상담 서비스</h2>
-            <p class="section__desc">구입/판매(매입) 목적에 맞춰 필요한 절차를 정확히 안내합니다.</p>
+            <h2 class="section__title">바로가기</h2>
+            <p class="section__desc">필요한 페이지로 바로 이동해 자세한 안내를 받아보세요.</p>
           </div>
 
           <div class="grid">
-            <article class="feature">
+            <a class="feature" href="./buy.html">
               <div class="feature__icon" aria-hidden="true">💳</div>
-              <h3 class="feature__title">상품권 구입 상담</h3>
-              <p class="feature__desc">구입 방식(일반/대량/조건) 확인 후 안내합니다.</p>
-            </article>
-            <article class="feature">
-              <div class="feature__icon" aria-hidden="true">📱</div>
-              <h3 class="feature__title">할부·대량 구매 상담</h3>
-              <p class="feature__desc">상품권 종류/조건에 따라 가능 여부를 확인해드립니다.</p>
-            </article>
-            <article class="feature">
+              <h3 class="feature__title">구매 상담</h3>
+              <p class="feature__desc">상품권 구입·대량·할부 상담</p>
+            </a>
+            <a class="feature" href="./sell.html">
               <div class="feature__icon" aria-hidden="true">⚡</div>
-              <h3 class="feature__title">즉시 매입(판매) 상담</h3>
-              <p class="feature__desc">진위 확인·정산 절차·유의사항을 안내합니다.</p>
-            </article>
-            <article class="feature">
-              <div class="feature__icon" aria-hidden="true">🏢</div>
-              <h3 class="feature__title">1:1 전담 매니저</h3>
-              <p class="feature__desc">상황에 맞는 안내를 위해 상담 채널로 빠르게 연결합니다.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--dark" id="shopping" aria-label="쇼핑몰 안내">
-        <div class="container">
-          <div class="section__head section__head--dark">
-            <h2 class="section__title">SHOPPING MALL</h2>
-            <p class="section__desc">공식 인증 쇼핑몰/파트너 안내와 상담 연결을 한 곳에서 제공합니다.</p>
-          </div>
-
-          <div class="darkCards">
-            <article class="darkCard">
-              <h3 class="darkCard__title">구매 상담</h3>
-              <p class="darkCard__desc">모바일/문화/백화점/구글기프트 등 구매 목적에 맞춘 1:1 안내.</p>
-              <a class="btn btn--ghost btn--outlineLight" href="./buy.html">바로가기</a>
-            </article>
-            <article class="darkCard">
-              <h3 class="darkCard__title">매입(판매) 상담</h3>
-              <p class="darkCard__desc">상품권 정보 확인 후 절차·유의사항·정산 방식 문의를 안내.</p>
-              <a class="btn btn--ghost btn--outlineLight" href="./sell.html">바로가기</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--muted" id="process">
-        <div class="container">
-          <div class="section__head">
-            <h2 class="section__title">진행 절차</h2>
-            <p class="section__desc">상담 → 확인 → 안내 → 진행 순으로 명확하게 진행합니다.</p>
-          </div>
-
-          <div class="showcase">
-            <div class="showcase__panel">
-              <h3 class="showcase__title">구입(구매) 상담 절차</h3>
-              <p class="showcase__desc">
-                원하시는 상품권 종류/금액/수량/구입 방식(일반·대량·할부)을 확인하고, 가능한 옵션과 유의사항을 안내합니다.
-              </p>
-              <ul class="list">
-                <li><strong>요청 내용</strong> 확인</li>
-                <li><strong>가능 여부·조건</strong> 안내</li>
-                <li><strong>진행 방법</strong> 안내</li>
-              </ul>
-            </div>
-            <div class="showcase__panel">
-              <h3 class="showcase__title">판매(매입) 상담 절차</h3>
-              <p class="showcase__desc">
-                매입(판매) 상담은 상품권 상태/종류를 확인하고, 진위 확인 및 정산 절차를 안내한 뒤 진행합니다.
-              </p>
-              <ul class="list">
-                <li><strong>상품권 정보</strong> 확인</li>
-                <li><strong>절차·유의</strong> 안내</li>
-                <li><strong>정산 방식</strong> 안내</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="faq">
-        <div class="container">
-          <div class="section__head">
-            <h2 class="section__title">자주 묻는 질문</h2>
-            <p class="section__desc">상담 전 궁금한 내용을 빠르게 확인하세요.</p>
-          </div>
-
-          <div class="faq" role="list">
-            <details class="faq__item" role="listitem">
-              <summary class="faq__q">어떤 상품권을 상담할 수 있나요?</summary>
-              <div class="faq__a">
-                모바일 상품권, 문화상품권, 백화점 상품권, 구글 기프트카드 등 상품권 전반에 대한 구입/판매(매입) 상담이
-                가능합니다.
-              </div>
-            </details>
-            <details class="faq__item" role="listitem">
-              <summary class="faq__q">대량 구매/할부 구매도 상담이 되나요?</summary>
-              <div class="faq__a">
-                네. 상품권 종류와 조건에 따라 가능 여부가 달라질 수 있어 상담으로 확인 후 안내해드립니다.
-              </div>
-            </details>
-            <details class="faq__item" role="listitem">
-              <summary class="faq__q">상담은 어떤 채널로 진행되나요?</summary>
-              <div class="faq__a">카카오톡/전화/이메일 등 편한 채널로 1:1 상담을 진행합니다.</div>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contact">
-        <div class="container">
-          <div class="cta">
-            <div class="cta__copy">
-              <h2 class="cta__title">지금 바로 1:1 상담을 시작하세요</h2>
-              <p class="cta__desc">
-                아래 버튼은 임시 연결입니다. 실제 운영 정보(전화/카카오톡/채널톡/사업자 정보)로 교체하면 그대로 사용 가능합니다.
-              </p>
-            </div>
-            <div class="cta__actions">
-              <a class="btn btn--primary" href="tel:+821000000000">전화 상담</a>
-              <a class="btn btn--secondary" href="mailto:hello@example.com?subject=%EC%83%81%ED%92%88%EA%B6%8C%20%EC%83%81%EB%8B%B4%20%EB%AC%B8%EC%9D%98">
-                이메일 상담
-              </a>
-              <a class="btn btn--ghost" href="#top">맨 위로</a>
-            </div>
+              <h3 class="feature__title">매입 상담</h3>
+              <p class="feature__desc">즉시 매입(판매)·정산 안내</p>
+            </a>
+            <a class="feature" href="./services.html">
+              <div class="feature__icon" aria-hidden="true">🧭</div>
+              <h3 class="feature__title">상담 서비스</h3>
+              <p class="feature__desc">목적별 상담 서비스 한눈에</p>
+            </a>
+            <a class="feature" href="./shopping.html">
+              <div class="feature__icon" aria-hidden="true">🛍️</div>
+              <h3 class="feature__title">쇼핑몰</h3>
+              <p class="feature__desc">공식 인증 쇼핑몰/파트너 안내</p>
+            </a>
+            <a class="feature" href="./process.html">
+              <div class="feature__icon" aria-hidden="true">📋</div>
+              <h3 class="feature__title">진행 절차</h3>
+              <p class="feature__desc">상담→확인→안내→진행</p>
+            </a>
+            <a class="feature" href="./faq.html">
+              <div class="feature__icon" aria-hidden="true">❓</div>
+              <h3 class="feature__title">자주 묻는 질문</h3>
+              <p class="feature__desc">상담 전 빠른 확인</p>
+            </a>
+            <a class="feature" href="./contact.html">
+              <div class="feature__icon" aria-hidden="true">📞</div>
+              <h3 class="feature__title">상담 문의</h3>
+              <p class="feature__desc">전화/이메일/채널톡 연결</p>
+            </a>
           </div>
         </div>
       </section>
